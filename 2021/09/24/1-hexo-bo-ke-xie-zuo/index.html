@@ -510,11 +510,11 @@ tags:</span>
 </tr>
 </tbody></table>
 <h2 id="3、编写文章（基于Markdown）"><a href="#3、编写文章（基于Markdown）" class="headerlink" title="3、编写文章（基于Markdown）"></a>3、编写文章（基于Markdown）</h2><p><strong>Markdown简介：</strong>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式</p>
-<h3 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
-<span class="token title important"><span class="token punctuation">##</span>  二级标题</span>
-<span class="token title important"><span class="token punctuation">###</span> 三级标题</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h3><pre class="line-numbers language-none"><code class="language-none"># 一级标题
+##  二级标题
+### 三级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/1%E3%80%81Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C/%E6%A0%87%E9%A2%98.png" alt="标题"></p>
+<p><img src="/2021/09/24/1-hexo-bo-ke-xie-zuo/%E6%A0%87%E9%A2%98.png" alt="a"></p>
 <h3 id="（2）代码高亮"><a href="#（2）代码高亮" class="headerlink" title="（2）代码高亮"></a>（2）代码高亮</h3><p><strong>高亮的定义：</strong>通过字体的颜色或背景色，突出某段内容。分为：<code>行内代码高亮</code>、<code>代码块高亮</code>、<code>（普通文本高亮）</code></p>
 <h4 id="行内代码高亮"><a href="#行内代码高亮" class="headerlink" title="行内代码高亮"></a>行内代码高亮</h4><p>语法：</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token code-snippet code keyword">`行内代码高亮`</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -522,15 +522,14 @@ tags:</span>
 <p>效果：</p>
 <p><code>行内代码高亮</code></p>
 <h4 id="代码块高亮"><a href="#代码块高亮" class="headerlink" title="代码块高亮"></a>代码块高亮</h4><p>语法：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">```
+<pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;
 代码块高亮
-代码块高亮<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">
-效果：
+代码块高亮
+&#96;&#96;&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-&#96;&#96;&#96;markdowm
-代码块高亮
-代码块高亮<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果：</p>
+<pre class="line-numbers language-markdowm" data-language="markdowm"><code class="language-markdowm">代码块高亮
+代码块高亮<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="普通文本高亮"><a href="#普通文本高亮" class="headerlink" title="普通文本高亮"></a>普通文本高亮</h4><p>CommonMark中并未定义普通文本高亮。如果你使用的markdown编辑器不支持该便捷设置，可通过HTML标签<code>&lt;mark&gt;</code>实现，注意：不同编辑器对&lt;mark&gt;标签的样式实现可能会略有不同：</p>
 <p><strong>语法：</strong></p>
@@ -572,22 +571,35 @@ tags:</span>
 <td align="center">&lt;big&gt;大号字体&lt;/big&gt;</td>
 </tr>
 </tbody></table>
-<h2 id="3、插入图片"><a href="#3、插入图片" class="headerlink" title="3、插入图片"></a>3、插入图片</h2><h3 id="（1）绝对引用：使用-source-images-文件夹"><a href="#（1）绝对引用：使用-source-images-文件夹" class="headerlink" title="（1）绝对引用：使用 /source/images 文件夹"></a>（1）绝对引用：使用 /source/images 文件夹</h3><p>将图片文件放在 /source/images 文件夹下, 使用 markdown 语法</p>
-<pre class="line-numbers language-none"><code class="language-none">![代替图片的文字](&#x2F;images&#x2F;假装有图.png) <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3、插入图片——Markdown方法"><a href="#3、插入图片——Markdown方法" class="headerlink" title="3、插入图片——Markdown方法"></a>3、插入图片——Markdown方法</h2><h3 id="（1）绝对引用：使用-source-images-文件夹"><a href="#（1）绝对引用：使用-source-images-文件夹" class="headerlink" title="（1）绝对引用：使用 /source/images 文件夹"></a>（1）绝对引用：使用 /source/images 文件夹</h3><p>将图片文件放在 /source/images 文件夹下, 使用 markdown 语法</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">代替图片的文字</span>](<span class="token url">/images/假装有图.png</span>)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="https://c-ssl.duitang.com/uploads/item/201707/11/20170711101133_2HSNG.jpeg" alt="假装有图"><br>可以实现图片显示。</p>
+<p>可以实现图片显示。</p>
 <h3 id="（2）相对引用（推荐）"><a href="#（2）相对引用（推荐）" class="headerlink" title="（2）相对引用（推荐）"></a>（2）相对引用（推荐）</h3><p>在Hexo根目录中*_config.yml* 中配置指令 post_asset_folder: true 这样在每次新建文章的时候就会建立同名文件夹, 直接将相应的文章图片放在文件夹内使用markdown语法访问同名文件夹下图片资源,十分方便。</p>
 <pre class="line-numbers language-none"><code class="language-none">![a](标题.png)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="/2021/09/24/1-hexo-bo-ke-xie-zuo/%E6%A0%87%E9%A2%98.png" alt="a"></p>
 <h3 id="（3）在线资源"><a href="#（3）在线资源" class="headerlink" title="（3）在线资源"></a>（3）在线资源</h3><p>如果我们要的图片现在网络上已经存在了,我们找到相应的地址直接引用就好了。可以只用标准markdown 图片语法引用相关图片</p>
-<pre class="line-numbers language-none"><code class="language-none">![图片](https:&#x2F;&#x2F;c-ssl.duitang.com&#x2F;uploads&#x2F;item&#x2F;201909&#x2F;28&#x2F;20190928231520_MuJFX.thumb.700_0.jpeg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">图片1</span>](<span class="token url">http://qzyy987dp.bkt.clouddn.com/%E7%8C%AB%E7%8C%AB.jpeg</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="https://c-ssl.duitang.com/uploads/item/201909/28/20190928231520_MuJFX.thumb.700_0.jpeg" alt="图片"></p>
-<h2 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h2><pre class="line-numbers language-none"><code class="language-none">| 标题1  | 标题2 |  标题3 |
+<h2 id="4、插入图片——使用HTML引用（推荐，可控制图片大小）"><a href="#4、插入图片——使用HTML引用（推荐，可控制图片大小）" class="headerlink" title="4、插入图片——使用HTML引用（推荐，可控制图片大小）"></a>4、插入图片——使用HTML引用（推荐，可控制图片大小）</h2><p>语法：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://qzyy987dp.bkt.clouddn.com/%E7%8C%AB%E7%8C%AB.jpeg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>256</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>256</span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="http://qzyy987dp.bkt.clouddn.com/%E7%8C%AB%E7%8C%AB.jpeg" width=256 height=256 />
+
+<p>固定图片大小：width=256,height=256设置的是显示图像的尺寸，src后面接的就是图像对象</p>
+<p>还可以使用百分比的方式来给width,height传参</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://qzyy987dp.bkt.clouddn.com/%E7%8C%AB%E7%8C%AB.jpeg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>其中width和height后面的50%就是根据窗口的大小以一定的比例显示图片。值得一说的是，这种按照百分比显示方法，是以width方向为准，并保持纵横比的。因此用此方法的时候，可以把height设置缺省。如：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://alexcld.com/images/pengyuyan.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>5%<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h2 id="5、插入表格"><a href="#5、插入表格" class="headerlink" title="5、插入表格"></a>5、插入表格</h2><pre class="line-numbers language-markdwon" data-language="markdwon"><code class="language-markdwon">| 标题1  | 标题2 |  标题3 |
 | :----- | :---: | -----: |
 | 左对齐 | 居中  | 右对齐 |
 | 内容1  | 内容2 |  内容3 |<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
 <table>
 <thead>
 <tr>
@@ -617,8 +629,9 @@ tags:</span>
 <p><a target="_blank" rel="noopener" href="https://www.appinn.com/markdown/index.html">2、Markdown 语法说明 (简体中文版)</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36457584/article/details/87878558">3、Hexo撰写文章</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hugochen1024/p/12570656.html">4、Hexo博客插入图片的方法</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011732358/article/details/83098211">5、Markdown常用语法</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/tuxingchen6/article/details/55222951">6、利用Markdown创建表格</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45509582/article/details/108582689">5、hexo插入图片及控制大小</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011732358/article/details/83098211">6、Markdown常用语法</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/tuxingchen6/article/details/55222951">7、利用Markdown创建表格</a></p>
 
                 
             </div>
